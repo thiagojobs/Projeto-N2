@@ -489,20 +489,8 @@ def menu(): #Menu principal do programa
             Thiago Kauã Pestana do Amaral - 32397739
             """)
 
-
-            if dadoscliente[0] == True:
-
-                print(f"Seus dados são: {dadoscliente}")
-                print(f"Seu limite em nosso banco é: {dadoscliente[6]:,.2f}")
-                print(f"Seu extrato é: {extrato}")
-
-
-                input("Aperte enter para voltar ao banco!")
-                limpar_tela()
-
-            else:
-                input("Aperte enter para voltar ao banco!")
-                limpar_tela()
+            input("Aperte enter para voltar ao banco!")
+            limpar_tela()
 
 limpar_tela()
 menu()
