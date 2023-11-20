@@ -264,7 +264,7 @@ def sacar(dadoscliente, extrato): #Função de saque
             else:
                 print("Conta inexistente, digite novamente.")
 
-def saldo(dadoscliente, extrato, extratolimite): #função consultar saque.
+def saldo(dadoscliente): #função consultar saque.
 
     
     tentativas_senha = 0
@@ -302,7 +302,7 @@ def saldo(dadoscliente, extrato, extratolimite): #função consultar saque.
             print("Conta inexistente, digite novamente.")
 
 
-def consulta_extrato(dadoscliente, extrato, extratolimite): #Consulta extrato
+def consulta_extrato(dadoscliente, extrato): #Consulta extrato
 
     limpar_tela()
     
@@ -429,7 +429,7 @@ def menu(): #Menu principal do programa
         elif escolha == 4:
             if dadoscliente[0] == True:
                 if "blocked" not in dadoscliente:
-                    saldo(dadoscliente, extrato, limite)
+                    saldo(dadoscliente)
                 
                 else:
                     limpar_tela()
@@ -457,7 +457,7 @@ def menu(): #Menu principal do programa
         elif escolha == 5:
             if dadoscliente[0] == True:
                 if "blocked" not in dadoscliente:
-                    consulta_extrato(dadoscliente, extrato, limite)
+                    consulta_extrato(dadoscliente, extrato)
 
                 else:
                     limpar_tela()
